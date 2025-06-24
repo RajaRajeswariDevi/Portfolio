@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Raja Rajeswari Devi Sajjala</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="p.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #f8fafc 0%, #e3e6f3 100%);
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        .header {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #2a3a5c;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2a3a5c;
+            font-weight: 500;
+            transition: color 0.2s;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        .navbar a.active, .navbar a:hover {
+            color: #4e8cff;
+        }
+        .contact-section {
+            max-width: 500px;
+            margin: 60px auto 0 auto;
+            padding: 40px 32px 60px 32px;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(78,140,255,0.08);
+        }
+        .contact-title {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 2.1rem;
+            color: #2a3a5c;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #2a3a5c;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 1px solid #cfd8dc;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            background: #f6f8ff;
+            resize: none;
+        }
+        .contact-form button {
+            background: #4e8cff;
+            color: #fff;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 24px;
+            font-size: 1rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .contact-form button:hover {
+            background: #2a3a5c;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 28px;
+            color: #444;
+        }
+        .contact-info a {
+            color: #4e8cff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+    <section class="contact-section">
+        <div class="contact-title">Contact Me</div>
+        <form class="contact-form" autocomplete="off">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p><i class='bx bx-envelope'></i> Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p><i class='bx bx-phone'></i> Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+            <p>
+                <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+            </p>
+        </div>
+    </section>
+</body>
+</html>
+<!--<!DOCTYPE html>
+html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Raja Rajeswari Devi Sajjala</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="p.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #f8fafc 0%, #e3e6f3 100%);
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    .header {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: #2a3a5c;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+    .navbar a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2a3a5c;
+      font-weight: 500;
+      transition: color 0.2s;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+    .navbar a.active, .navbar a:hover {
+      color: #4e8cff;
+    }
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 80vh;
+      padding: 60px 20px;
+      background: #fff;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+      margin: 60px auto;
+      max-width: 900px;
+      border-radius: 12px;
+    }
+    .contact-title {
+      font-size: 2.2rem;
+      font-family: 'Montserrat', sans-serif;
+      color: #2a3a5c;
+      margin-bottom: 1.2rem;
+      font-weight: 700;
+    }
+    .contact-form {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      font-family: inherit;
+      font-size: 1rem;
+      padding: 14px 16px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      background: #f4f6fb;
+    }
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .contact-form button {
+      background: #7b8cff;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 12px rgba(123,140,255,0.2);
+    }
+    .contact-form button:hover {
+      background: #2a3a5c;
+    }
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        padding: 15px 10px;
+      }
+      .navbar {
+        margin-top: 10px;
+      }
+      .contact-section {
+        padding: 40px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">Raja Rajeswari Devi</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <div class="contact-title">Get in Touch</div>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>
+-->

@@ -1,0 +1,171 @@
+<!-- Create a new file: about.html in the same folder as profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Raja Rajeswari Devi Sajjala</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="p.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #f8fafc 0%, #e3e6f3 100%);
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        .header {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #2a3a5c;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2a3a5c;
+            font-weight: 500;
+            transition: color 0.2s;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        .navbar a.active, .navbar a:hover {
+            color: #4e8cff;
+        }
+        .about-main {
+            max-width: 900px;
+            margin: 60px auto 0 auto;
+            padding: 40px 32px 60px 32px;
+            background: transparent;
+            display: flex;
+            align-items: flex-start;
+            gap: 48px;
+        }
+        .about-img {
+            flex: 0 0 180px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .about-img img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            box-shadow: 0 4px 24px rgba(78,140,255,0.13);
+            border: 4px solid #fff;
+            background: #f6f8ff;
+            object-fit: cover;
+        }
+        .about-info {
+            flex: 1;
+        }
+        .about-info h1 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 2.3rem;
+            color: #2a3a5c;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .about-info h2 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 1.3rem;
+            color: #7b8cff;
+            margin-bottom: 1.2rem;
+            font-weight: 600;
+        }
+        .about-info p {
+            font-size: 1.13rem;
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 0;
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(78,140,255,0.06);
+        }
+        @media (max-width: 900px) {
+            .about-main {
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                padding: 24px 8px 40px 8px;
+            }
+            .about-img img {
+                width: 130px;
+                height: 130px;
+            }
+            .about-info p {
+                padding: 16px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"></a>
+        <nav class="navbar">
+    <a href="index.html">Home</a>
+<a href="about.html"class="active">About</a>
+<a href="services.html" >Services</a>   <!-- or Portfolio -->
+<a href="portfolio.html">Portfolio</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+    </header>
+    <main class="about-main">
+        <div class="about-img">
+            <img src="C:\Users\Admin\Pictures\home.jpg" alt="Profile Photo"
+                 style="
+                    width: 240px;
+                    height: 240px;
+                    border-radius: 50%;
+                    box-shadow: 0 12px 48px rgba(78,140,255,0.22), 0 0 0 14px #e3e6f3;
+                    border: 5px solid #fff;
+                    background: linear-gradient(135deg, #7b8cff 0%, #f6f8ff 100%);
+                    object-fit: cover;
+                    transition: transform 0.4s, box-shadow 0.4s;
+                "
+                onmouseover="this.style.transform='scale(1.07) rotate(-3deg)';this.style.boxShadow='0 20px 64px rgba(78,140,255,0.28), 0 0 0 18px #e3e6f3';"
+                onmouseout="this.style.transform='scale(1) rotate(0)';this.style.boxShadow='0 12px 48px rgba(78,140,255,0.22), 0 0 0 14px #e3e6f3';"
+            >
+        </div>
+        <div class="about-info">
+            <h1>Raja Rajeswari Devi Sajjala</h1>
+            <h2>Software Developer</h2>
+            <p>
+                Hello! I'm <strong>Raja Rajeswari Devi Sajjala</strong>, an enthusiastic and detail-oriented software developer with a passion for building impactful solutions.<br><br>
+                My journey in technology began with a curiosity for how things work and a drive to solve real-world problems through code. I have hands-on experience in academic projects, coding competitions, and collaborative teamwork.<br><br>
+                <span class="more-text" style="display:none;">
+                    My core skills include <strong>Python, Java, web development (HTML, CSS, JavaScript)</strong>, and a keen interest in learning new technologies. I am committed to continuous growth and enjoy working in dynamic, innovative environments.<br><br>
+                    Outside of coding, I love exploring new ideas, reading about tech trends, and contributing to open-source projects. I am excited to bring my skills and enthusiasm to new challenges and make a positive impact in the software industry.
+                </span>
+                <button class="read-more-btn" onclick="toggleReadMore()" style="color:#fff;background:#4e8cff;border:none;font-size:1rem;cursor:pointer;margin-top:18px;text-decoration:none;padding:8px 22px;border-radius:20px;box-shadow:0 2px 8px rgba(78,140,255,0.08);transition:background 0.2s,transform 0.2s;outline:none;">Read More</button>
+            </p>
+        </div>
+    </main>
+    <script>
+        function toggleReadMore() {
+            const moreText = document.querySelector('.more-text');
+            const btn = document.querySelector('.read-more-btn');
+            if (moreText.style.display === "none") {
+                moreText.style.display = "inline";
+                btn.textContent = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                btn.textContent = "Read More";
+            }
+        }
+    </script>
+</body>
+</html>

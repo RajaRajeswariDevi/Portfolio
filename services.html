@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Raja Rajeswari Devi Sajjala</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="p.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #f8fafc 0%, #e3e6f3 100%);
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        .header {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #2a3a5c;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2a3a5c;
+            font-weight: 500;
+            transition: color 0.2s;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        .navbar a.active, .navbar a:hover {
+            color: #4e8cff;
+        }
+        .services-section {
+            max-width: 1100px;
+            margin: 60px auto 0 auto;
+            padding: 40px 32px 60px 32px;
+        }
+        .services-title {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 2.3rem;
+            color: #2a3a5c;
+            margin-bottom: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+        }
+        .service-card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(78,140,255,0.08);
+            padding: 32px 28px;
+            max-width: 320px;
+            flex: 1 1 280px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .service-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(78,140,255,0.16);
+        }
+        .service-card i {
+            font-size: 2.8rem;
+            color: #7b8cff;
+            margin-bottom: 18px;
+        }
+        .service-card h3 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 1.25rem;
+            color: #2a3a5c;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        .service-card p {
+            font-size: 1.05rem;
+            color: #444;
+            line-height: 1.6;
+        }
+        @media (max-width: 900px) {
+            .services-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"></a>
+        <nav class="navbar">
+    <a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html" class="active">Services</a>   <!-- or Portfolio -->
+<a href="portfolio.html">Portfolio</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+    </header>
+    <section class="services-section">
+        <div class="services-title">My Services</div>
+        <div class="services-list">
+            <div class="service-card">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>
+                    Responsive and modern websites using HTML, CSS, JavaScript, and frameworks. From landing pages to dynamic web apps.
+                </p>
+            </div>
+            <div class="service-card">
+                <i class='bx bx-mobile-alt'></i>
+                <h3>App Development</h3>
+                <p>
+                    Building user-friendly mobile and desktop applications with a focus on performance and usability.
+                </p>
+            </div>
+            <div class="service-card">
+                <i class='bx bx-data'></i>
+                <h3>Database Design</h3>
+                <p>
+                    Designing and managing efficient databases, ensuring data integrity and security for your applications.
+                </p>
+            </div>
+            <div class="service-card">
+                <i class='bx bx-bulb'></i>
+                <h3>Problem Solving</h3>
+                <p>
+                    Algorithmic thinking and coding solutions for real-world challenges, including coding competitions and project consulting.
+                </p>
+            </div>
+            <div class="service-card">
+                <i class='bx bx-support'></i>
+                <h3>Technical Support & Training</h3>
+                <p>
+                    Offering technical support, troubleshooting, and personalized training sessions to help you or your team grow in software development skills.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

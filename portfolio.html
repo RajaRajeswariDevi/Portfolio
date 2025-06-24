@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Raja Rajeswari Devi Sajjala</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="p.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #f8fafc 0%, #e3e6f3 100%);
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        .header {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #2a3a5c;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2a3a5c;
+            font-weight: 500;
+            transition: color 0.2s;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        .navbar a.active, .navbar a:hover {
+            color: #4e8cff;
+        }
+        .portfolio-section {
+            max-width: 900px;
+            margin: 60px auto 0 auto;
+            padding: 40px 32px 60px 32px;
+        }
+        .portfolio-title {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 2.3rem;
+            color: #2a3a5c;
+            margin-bottom: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        .portfolio-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+        }
+        .portfolio-card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(78,140,255,0.08);
+            padding: 32px 28px;
+            max-width: 380px;
+            flex: 1 1 340px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .portfolio-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(78,140,255,0.16);
+        }
+        .portfolio-card i {
+            font-size: 2.8rem;
+            color: #7b8cff;
+            margin-bottom: 18px;
+        }
+        .portfolio-card h3 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 1.25rem;
+            color: #2a3a5c;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        .portfolio-card p {
+            font-size: 1.05rem;
+            color: #444;
+            line-height: 1.6;
+        }
+        @media (max-width: 900px) {
+            .portfolio-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"></a>
+        <nav class="navbar">
+           <a href="index.html">Home</a>
+           <a href="about.html">About</a>
+           <a href="services.html">Services</a>
+           <a href="portfolio.html" class="active" title="Portfolio">Portfolio</a>
+           <a href="contact.html">Contact</a>
+           <a href="resume.pdf" download style="margin-left:20px;color:#4e8cff;font-weight:bold;">
+               <i class='bx bx-download'></i> Download Resume
+           </a>
+        </nav>
+    </header>
+    <section class="portfolio-section">
+        <div class="portfolio-title">My Projects</div>
+        <div class="portfolio-list">
+            <div class="portfolio-card">
+                <i class='bx bx-mail-send'></i>
+                <h3>Spam Mail Detection using Machine Learning</h3>
+                <p>
+                    Developed a machine learning model to classify emails as spam or not spam using <strong>Linear Regression</strong>. Included data preprocessing, feature extraction, model training, and evaluation for high accuracy.
+                </p>
+            </div>
+            <div class="portfolio-card">
+                <i class='bx bx-leaf'></i>
+                <h3>Rice Leaf Disease Detection using Deep Learning</h3>
+                <p>
+                    Built a deep learning solution for rice leaf disease detection using <strong>ResNet-50</strong> and <strong>Multi-Scale Attention</strong>. Enabled early identification and classification of diseases from images.
+                </p>
+            </div>
+            <div class="portfolio-card">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Student Performance Predictor</h3>
+                <p>
+                    A web tool that predicts student performance based on study habits and attendance using regression analysis.
+                </p>
+            </div>
+            <div class="portfolio-card">
+                <i class='bx bx-calendar'></i>
+                <h3>Event Scheduler App</h3>
+                <p>
+                    Simple app to schedule, edit, and get reminders for events. Built with HTML, CSS, and JavaScript.
+                </p>
+            </div>
+            <div class="portfolio-card">
+                <i class='bx bx-search-alt'></i>
+                <h3>Document Search Engine</h3>
+                <p>
+                    A mini search engine for fast keyword-based document retrieval using Python and Flask.
+                </p>
+            </div>
+            <div class="portfolio-card">
+                <i class='bx bx-paint'></i>
+                <h3>Portfolio Website Template</h3>
+                <p>
+                    A customizable and responsive portfolio template for students and professionals, built with HTML and CSS.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
